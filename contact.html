@@ -151,120 +151,147 @@
       <section class="container py-3" data-scroll-section>
         <!-- Page Content Goes Here -->
 
-        <h1
-          class="display-3 mb-5"
-          data-scroll
-          data-scroll-speed="6"
-          data-scroll-position="top">
-          Professional Ethics
-        </h1>
+        <div class="position-relative ps-xl-7">
+          <div class="tracking-wide text-vertical mt-4 small d-none d-xl-block">
+            <a
+              class="text-vertical-link me-3"
+              href="https://www.instagram.com/n.rmln/"
+              >@n.rmln</a
+            >
+            &middot;
+            <a
+              class="text-vertical-link mx-3"
+              href="https://www.instagram.com/nxthanj/"
+              >@nxthanj</a
+            >
+            &middot;
+            <a class="text-vertical-link ms-3" href="https://github.com/n-rmltn"
+              >Github : n-rmltn</a
+            >
+          </div>
 
-        <div class="row g-8" data-scroll data-scroll-position="bottom">
-          <!-- Single Work-->
-          <div
-            data-scroll
-            data-scroll-position="bottom"
-            class="col-12 col-md-6 fade-in-left">
-            <div class="position-relative">
-              <a class="link-cover" href="ethics-1.html">
-                <picture>
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/ethics_1.png"
-                    alt="" />
-                </picture>
-              </a>
-              <p class="subtitle-xs mb-0 mt-4">
-                <span class="me-2">Definition</span>
-              </p>
-              <p class="fw-bolder lead mb-3 mt-2">Professional Ethics</p>
-              <p class="small text-muted mb-2">
-                Find out more on what professional ethics mean.
-              </p>
-              <a class="link-body" href="./ethics-1.html">View Section</a>
+          <h1 class="display-3 col-xxl-8 mb-8">Ran into issues?</h1>
+
+          <h4 class="subtitle-sm mb-3">Email us</h4>
+          <a class="link-body" href="mailto:norm@normandlubaton.dev"
+            >norm@normandlubaton.dev</a
+          ><br />
+          <a class="link-body" href="mailto:msucnathan@gmail.com"
+            >msucnathan@gmail.com</a
+          >
+
+          <h4 class="subtitle-sm mt-8 mb-4">Send Us A Message</h4>
+
+          <!-- Contact Form-->
+          <form id="contactForm" onsubmit="setMailto(); return false;">
+            <div class="row g-5">
+              <div class="col-12 col-xl-7">
+                <div class="row g-5">
+                  <!-- Name-->
+                  <div class="col-12 col-md-6">
+                    <label class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="John Doe" />
+                  </div>
+                  <!-- / Name-->
+
+                  <!-- Email-->
+                  <div class="col-12 col-md-6">
+                    <label class="form-label">Your Email Adress</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="john@doe.com" />
+                  </div>
+                  <!-- / Email-->
+
+                  <!-- Service Type-->
+                  <div class="col-12">
+                    <label class="form-label d-block"
+                      >What Service Do You Require?</label
+                    >
+                    <div class="d-flex align-items-center flex-wrap">
+                      <div class="form-check-custom me-2 mb-2">
+                        <input
+                          class="form-check-input-custom"
+                          type="checkbox"
+                          name="service"
+                          value="Incorrect Fact"
+                          id="incorrectfact" />
+                        <label
+                          class="form-check-custom-label"
+                          for="incorrectfact"
+                          >Incorrect Fact</label
+                        >
+                      </div>
+                      <div class="form-check-custom me-2 mb-2">
+                        <input
+                          class="form-check-input-custom"
+                          type="checkbox"
+                          name="service"
+                          value="Add Fact"
+                          id="addfact" />
+                        <label class="form-check-custom-label" for="addfact"
+                          >Add Fact</label
+                        >
+                      </div>
+                      <div class="form-check-custom me-2 mb-2">
+                        <input
+                          class="form-check-input-custom"
+                          type="checkbox"
+                          name="service"
+                          value="Bug Report"
+                          id="bugreport" />
+                        <label class="form-check-custom-label" for="bugreport"
+                          >Bug Report</label
+                        >
+                      </div>
+                      <div class="form-check-custom me-2 mb-2">
+                        <input
+                          class="form-check-input-custom"
+                          type="checkbox"
+                          name="service"
+                          value="Miscellaneous"
+                          id="miscellaneous" />
+                        <label
+                          class="form-check-custom-label"
+                          for="miscellaneous"
+                          >Miscellaneous</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- / Service Type-->
+
+                  <!-- Project Information-->
+                  <div class="col-12">
+                    <label class="form-label">Tell Us About Your Issue</label>
+                    <textarea
+                      name="about"
+                      class="form-control"
+                      cols="30"
+                      rows="12"
+                      placeholder="Hi Norm & Nat, I would like to talk about ..."></textarea>
+                  </div>
+                  <!-- / Project Information-->
+
+                  <!-- Submit btn-->
+                  <div class="col-12 justify-content-end d-flex">
+                    <button class="btn btn-primary" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                  <!-- / Submit Btn-->
+                </div>
+              </div>
             </div>
-          </div>
-          <!-- / Single Work -->
-          <!-- Single Work-->
-          <div
-            data-scroll
-            data-scroll-position="bottom"
-            class="col-12 col-md-6 fade-in-right">
-            <div class="position-relative">
-              <a class="link-cover" href="./ethics-2.html">
-                <picture>
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/ethics_2.png"
-                    alt="" />
-                </picture>
-              </a>
-              <p class="subtitle-xs mb-0 mt-4">
-                <span class="me-2">Causes</span> &middot;
-                <span class="ms-2">Factors</span>
-              </p>
-              <p class="fw-bolder lead mb-3 mt-2">Professional Ethics</p>
-              <p class="small text-muted mb-2">
-                What could cause issues to arise in a person's professional
-                ethics? Find out more here.
-              </p>
-              <a class="link-body" href="./ethics-2.html">View Section</a>
-            </div>
-          </div>
-          <!-- / Single Work -->
-          <!-- Single Work-->
-          <div
-            data-scroll
-            data-scroll-position="bottom"
-            class="col-12 col-md-6 fade-in-left">
-            <div class="position-relative">
-              <a class="link-cover" href="./ethics-3.html">
-                <picture>
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/ethics_3.jpg"
-                    alt="" />
-                </picture>
-              </a>
-              <p class="subtitle-xs mb-0 mt-4">
-                <span class="me-2">Effects</span> &middot;
-                <span class="ms-2">Issues</span>
-              </p>
-              <p class="fw-bolder lead mb-3 mt-2">Professional Ethics</p>
-              <p class="small text-muted mb-2">
-                Have you ever been curious what happens in the event of breach
-                of professional ethics?
-              </p>
-              <a class="link-body" href="./ethics-3.html">View Section</a>
-            </div>
-          </div>
-          <!-- / Single Work -->
-          <!-- Single Work-->
-          <div
-            data-scroll
-            data-scroll-position="bottom"
-            class="col-12 col-md-6 fade-in-right">
-            <div class="position-relative">
-              <a class="link-cover" href="./ethics-4.html">
-                <picture>
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/ethics_4.jpg"
-                    alt="" />
-                </picture>
-              </a>
-              <p class="subtitle-xs mb-0 mt-4">
-                <span class="me-2">Prevention</span>
-              </p>
-              <p class="fw-bolder lead mb-3 mt-2">Professional Ethics</p>
-              <p class="small text-muted mb-2">
-                Ensure everyone maintains their professional ethics and
-                integrity with these strategies.
-              </p>
-              <a class="link-body" href="./ethics-4.html">View Section</a>
-            </div>
-          </div>
-          <!-- / Single Work -->
+          </form>
+          <!-- / Contact Form-->
         </div>
 
         <!-- /Page Content -->
@@ -273,18 +300,6 @@
 
       <!-- Footer -->
       <!-- Footer-->
-      <div
-        class="d-flex align-items-center justify-content-center flex-column col-lg-7 col-xl-6 col-xxl-5 text-center mx-auto mt-5 px-4 px-md-0 mt-lg-10"
-        data-scroll-section>
-        <h4
-          class="display-5 mb-5"
-          data-scroll
-          data-scroll-speed=".8"
-          data-scroll-delay="0.05">
-          Want to reach us?
-        </h4>
-        <a href="./contact.html" class="btn btn-primary">Get In Touch</a>
-      </div>
 
       <footer class="border-top mt-10 pt-5 pb-8" data-scroll-section>
         <div class="container d-flex justify-content-between">
@@ -295,8 +310,8 @@
       <!-- / Footer-->
     </div>
     <!-- /Locomotive Scroll Container-->
-
-    <!-- Theme JS -->
+    <!-- Email JS -->
+    <script src="./assets/js/email.js"></script>
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
 
